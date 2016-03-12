@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="lib/mocha.css">
+	<title>Bubble sort</title>
+</head>
+<body>
+	<div class="text">
+		<h2>Сортировка пузырьком</h2>
+		<p>	Алгоритм состоит из повторяющихся проходов по cортируемому массиву. За каждый проход элементы последовательно авниваются попарно и, если порядок в паре неверный, выполняется обмен элементов.</p>
+		<p> Проходы по массиву повторяются N-1 раз или до тех пор, пока на очередном проходе не окажется, что обмены больше не нужны, что означает — массив отсортирован. 
+		<p>При каждом проходе алгоритма по внутреннему циклу, очередной наибольший элемент массива ставится на своё место в конце массива рядом с предыдущим «наибольшим элементом», а наименьший элемент перемещается на одну позицию к началу массива («всплывает» до нужной позиции, как пузырёк в воде, отсюда и название алгоритма).</p>
+	</div>
+	<form class ="arr-form">
+		<input type="number">
+		<input type="number">
+		<input type="number">
+		<input type="number">
+		<input type="number">
+		<input type="number">
+		<input type="button" value="Go" id="goBtn"  class="btn" onclick="openArrBox();">
+	</form>
+	<div class="arr-box" id="arr-box">
+		<div class="arr-box-btn">
+			<input type="button" value="Next step" class="btn" id="nextBtn" onclick="nextClicked();">
+			<input type="button" value="Clear" class="btn clear-btn" id="clearBtn" onclick="clearArrBox();">
+		</div>
+	</div>
+		
+	<div style="width:505px; margin:auto;"><div id="mocha"></div></div>	
+	<!--script-->
+	<script src="script.js"></script>
+	<!--test_script-->
+	<script src="lib/mocha.js"></script>
+	<script>
+    	mocha.setup('bdd');
+	</script>
+	<script src="lib/chai.js"></script>
+	<script>
+    	var assert = chai.assert;
+  	</script>
+	
+	<script src="test.js"></script>
+	
+	<script>		
+    	mocha.run();
+ 	</script>
+
+</body>
+</html>

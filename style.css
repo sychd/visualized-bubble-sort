@@ -1,0 +1,80 @@
+body{
+	font-family: Helvetica;
+	
+}
+.arr-form, .arr-box{
+	margin: auto;
+}
+.text{
+	width: 505px;
+	margin: auto;
+	text-indent: 20px;
+	text-align: justify;
+	font-size: 0.9em;
+	padding-bottom: 25px;
+	border-bottom: 1px solid rgba(	64, 199, 129,0.4);
+}
+.text h2{
+	text-align: center;
+}
+.arr-form{
+	width: 505px;
+	padding-top: 35px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid rgba(	64, 199, 129,0.4);
+}
+input[type="number"]{
+	width: 55px;
+	height: 20px;
+	margin: 0 10px 10px 0;
+	border-radius: 3px;
+	border-color: rgba(	64, 199, 129,0.4);
+}
+.btn{
+	float: right;
+	height: 27px;
+	padding: 3px 15px;
+	margin: 0px 5px;
+	font-weight: 600;
+	background-color: #40c781;
+	border: none;
+	border-radius: 3px;
+	color: #f9f9f9;
+	-webkit-transition: all .15s;
+		 -o-transition: all .15s;
+			transition: all .15s;
+}
+.btn:hover{
+	background-color: #30a468;
+}
+.clear-btn{
+	background-color: #b83538;
+}
+.clear-btn:hover{
+	background-color: #a42f32;
+}
+.arr-box{
+	visibility: hidden;
+	padding-top: 30px;
+	width: 505px;
+	height: 85px;
+	position: relative;
+	border-bottom: 1px solid rgba(64, 199, 129,0.4);
+}
+.arr-box-btn{
+	float: right;
+	padding: 10px 0 20px;
+}
+
+.arr-elem{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	position: absolute;
+	border-left: 1px solid rgba(64, 199, 129,0.2);
+	border-right: 1px solid rgba(64, 199, 129,0.2);
+	background-color: #f9f9f9;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+}
