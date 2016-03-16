@@ -1,3 +1,4 @@
+"use strict";
 var arr = new Array;
 var yellow = '#FFFF3C',
 	   red = '#FF533C',
